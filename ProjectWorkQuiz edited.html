@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProjectWorkQuiz - JW Edition</title>
+
+  <style>
+      
+body {
+  width: 70%;
+  margin: auto;
+}
+p {
+  font-size: 20px;
+}
+input {
+  font-size: 20px;
+}
+button {
+  border-radius: 25px;
+  height: 30px;
+}
+.blank {
+  text-decoration: underline;
+}
+.blank::selection {
+  text-decoration-color: black;
+}
+.option {
+  background-color: beige;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.question {
+  margin-bottom: 20px;
+}
+.options {
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.btn-group {
+  margin-top: 20px;
+}
+.home {
+  display: inline-block;
+  position: absolute;
+  left: 90em;
+}
+.home-icon {
+  height: 20px;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #ffa64d;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ig:link{
+  color: white;
+}
+
+.ig:visited {
+  color: whitesmoke;
+}
+
+.end{
+  padding: 0px 50px 0px 50px
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="container clearfix"></div>
+  <header>
+    <h1>成语练习</h1>
+    <button class="home"><img src="https://i.ibb.co/wprhs7M/house-black-silhouette-without-door.png"
+        class="home-icon" /></button>
+  </header>
+  <section>
+    <p>
+      题目：
+    </p>
+    <p class="question">
+      古人说,<span
+        class="blank">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>,我们就是要善于运用计谋来战胜敌人。
+    </p>
+  </section>
+  <!-- Question Template -->
+  <div class="options">
+    <div class="option">
+      <input type="radio" name="option">A) 兵不厌诈</input>
+    </div>
+    <div class="option">
+      <input type="radio" name="option">B) 放屁</input>
+    </div>
+    <div class="option">
+      <input type="radio" name="option">C) 大便</input>
+    </div>
+    <div class="option">
+      <input type="radio" name="option">D) 鬼</input>
+    </div>
+
+    <div class="btn-group">
+      <button>检查答案</button>
+      <button>更多练习</button>
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+
+  请在<a class="ig" href="https://www.instagram.com/">IG 博览五千年2.0</a>追踪我们，参与更多有趣的活动
+</div>
+</body>
+
+</html>
