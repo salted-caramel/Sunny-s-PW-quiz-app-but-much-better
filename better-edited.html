@@ -16,9 +16,11 @@ body {
 }
 p {
   font-size: 20px;
+  font-size: 1.5vw;
 }
 input {
   font-size: 20px;
+  font-size: 1.5vw;
 }
 button {
   border-radius: 25px;
@@ -29,6 +31,10 @@ button {
 }
 .blank::selection {
   text-decoration-color: black;
+}
+
+.head{
+  font-size: 2.5vw;
 }
 .option {
   background-color: beige;
@@ -52,7 +58,7 @@ button {
 .home {
   display: inline-block;
   position: absolute;
-  left: 90em;
+  left: 80vw;
 }
 .home-icon {
   height: 20px;
@@ -98,10 +104,11 @@ button {
 <body>
   <div class="container clearfix"></div>
   <header>
-    <h1>成语练习</h1>
+    <h1 class="head">成语练习</h1>
     <button class="home"><img src="https://i.ibb.co/wprhs7M/house-black-silhouette-without-door.png"
         class="home-icon" /></button>
   </header>
+  <!-- Question template -->
   <section>
     <p>
       题目：
@@ -111,7 +118,7 @@ button {
         class="blank">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>,我们就是要善于运用计谋来战胜敌人。
     </p>
   </section>
-  <!-- Question Template -->
+  <!-- MCQ template -->
   <div class="options">
     <div class="option">
       <input type="radio" name="option">A) 兵不厌诈</input>
@@ -138,7 +145,7 @@ button {
 <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
 
-  请在<a class="ig" href="https://www.instagram.com/"> IG 博览五千年2.0 </a>追踪我们，参与更多有趣的活动
+  请在<a class="ig" href="https://www.instagram.com/">IG 博览五千年2.0</a>追踪我们，参与更多有趣的活动
 </div>
 </body>
 
