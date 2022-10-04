@@ -1,0 +1,229 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div id="lo_main" class="lo-student lvl-sec">
+	<style type="text/css">
+BODY, #lo_main { background:#e6f5ff; }
+#quiz_questions_container { width:90%; max-width:600px; margin:0px auto; padding:30px 0px; }
+
+#quiz_questions_container H1 { font-size:14px; color:#000000; }
+#quiz_questions_container H2 { font-size:14px; color:#a0a0a0; }
+#quiz_questions_container H3 { font-size:13px; color:#a0a0a0; }
+
+.content_plate_inline { display:inline-block; }
+
+.quiz_question { border:1px solid #dddddd; padding:0px; }
+.quiz_question > DIV { padding:10px 20px; }
+
+.quiz_question > DIV:first-of-type { background:#e6e6ff; }
+.quiz_question > DIV:first-of-type * { font-size:18px; font-weight:400; color:#000000; }
+.quiz_question > DIV:first-of-type H3 { color:#a7111f !important; font-size:18px !important; display:flex; }
+.quiz_question > DIV:first-of-type H3 SPAN { color:#000000 !important; font-size:18px !important; }
+.quiz_question > DIV:first-of-type H3 SPAN .automark { font-size:16px !important; color:#1cace4 !important; }
+
+.quiz_question > DIV .content_plate { font-size:18px; font-weight:400; color:#000000;  }
+.quiz_question > DIV .content_plate P { margin-bottom:10px; font-size:18px; font-weight:400; color:#000000;   } 
+.quiz_question > DIV .mcq_options TD, .quiz_question > DIV .mcq_options_container TD { padding:5px; vertical-align:top; font-size:18px; }
+
+.quiz_question > DIV .mcq_option_text, .quiz_question > DIV .mcq_option_control { font-size:18px; }
+
+.quiz_question > DIV  div_textarea { border:1px solid #cecece; width:500px; min-height:100px; margin-bottom:10px; }
+
+.quiz-properties { display:flex; justify-content:space-between; margin-bottom:20px; }
+
+
+
+.btn-submit { padding:5px 25px; }
+
+.item_container { margin-left:10px; }
+.answer_container { margin-left:10px; color:#111;/*#7296BB*/ }
+.content_plate { margin-bottom:10px; color:#999; }
+.mcq_option_content { padding-bottom:5px; }
+
+.content_plate > p, .content_plate > div,
+.mcq_option_content > p, .mcq_option_content > div { margin:0; padding:0; color:#999; }
+
+tr.mcq_option_selected > td:first-child { font-weight:bold; color:#111; }
+tr.mcq_option_notselected > td:first-child { color:#999; }
+
+.xmcq_option_selected { font-weight:bold; font-size:110%; }
+.mcq_option_notselected { /*font-style:italic;*/ }
+
+.is_correct_yes { color:blue; font-weight:bold; }
+.is_correct_no { color:red; font-weight:bold; }
+.is_correct_unknown { color:#aaa; font-weight:bold; }
+.mark_info_unknown { color:#aaa; }
+
+.fibBlank, .fibRight, .fibWrong { font-weight:bold; font-size:100%; border:1px solid #999; padding:2px; color:#222; }
+.fibRight { background-image: url(/skin/ca7/caquiz/icon/right.gif); background-repeat: no-repeat; background-position: right; }
+.fibWrong { background-image: url(/skin/ca7/caquiz/icon/wrong.gif); background-repeat: no-repeat; background-position: right; }
+
+td.mcq_eval { width:20px; }
+td.mcq_eval.mcq_eval_selected.mcq_eval_right { background-image: url(/skin/ca7/caquiz/icon/right.gif); background-repeat: no-repeat; background-position: center; }
+td.mcq_eval.mcq_eval_selected.mcq_eval_wrong { background-image: url(/skin/ca7/caquiz/icon/wrong.gif); background-repeat: no-repeat; background-position: center; }
+
+.answer_container { color:#ed1b2f; display:block; margin-top:20px; }
+
+.alert {
+  padding: 20px;
+  background-color: #ffa64d;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.btn-group button {
+  background-color: #04AA6D; 
+  border: 1px solid green; 
+  color: white; 
+  padding: 10px 24px;
+  cursor: pointer; 
+  float: left; 
+}
+
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+
+</style>
+
+
+
+<body>
+
+
+
+
+
+
+
+
+<div id="quiz_questions_container">
+
+<div class="quiz-properties">
+	<div class="quiz-title">
+	<p font-size="50px">成语练习</p>
+	<h2>编号 000001</h2>
+	</div>
+	</div>
+	</div>
+
+<form method="post">
+<div class="quiz_question">
+
+
+	<div>
+	  <div class="margin-bottom-xs pull-left">
+			<h3 class="PTBN_heading no-margin-top no-margin-bottom">题号000001 &nbsp;
+            
+								<span class="content_plate_inline">
+					古人说,________,我们就是要善于运用计谋来战胜敌人。注：请在答案框输入大写字母			</span>
+							
+			</h3>
+
+		</div>
+
+	  <div class="pull-left margin-left-sm padding-top-xs">
+
+		</div>    
+		<div style="clear:both;"></div>
+	</div>
+<qnalign style = "position:relative; left:80px;">
+<br>
+<br>
+A) 兵不厌诈
+<br>
+B) 兵不厌诈
+<br>
+C) 兵不厌诈
+<br>
+D) 兵不厌诈
+<br>
+<br>
+<br>
+
+<br>
+</qnalign>
+
+
+
+<form style = "position:relative; left:200px;">
+    <label for="answer">输入答案: </label>
+    <input type="text" id="answer">
+</form>
+
+<div class="btn-group">
+  <button onclick="checkAnswer()">检查答案</button>
+  <button onclick="redirect()">更多练习</button>
+  <button onclick="returnmenu()">返回主页</button>
+</div>
+
+
+<script type="text/javascript">
+
+    var counter1 = 0;
+    var counter2 = 0;
+
+    function checkAnswer() {
+        var confirmAnswer = "A";
+        var answer = document.getElementById("answer").value;
+        if (answer == confirmAnswer) {
+             alert("恭喜你回答正确");
+             counter2++;
+        }
+        else{
+
+            alert("回答错误，再仔细想想吧！");
+            counter1++;
+        }
+
+        if (counter1>6 && counter2==0) {
+            alert("提示：答案就在选项 A 与选项 C 之间，再仔细想想吧！");
+        }
+    }
+
+
+function redirect() {
+  location.replace("https://www.hci.edu.sg")//link of next question
+}
+
+function returnmenu() {
+  location.replace("https://www.hci.edu.sg")//main page
+}
+</script>
+<br>
+<br>
+<br>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+
+请在<a href="https://www.instagram.com/">IG 博览五千年2.0</a>追踪我们，参与更多有趣的活动
+</div>
+</body>
+</html>
